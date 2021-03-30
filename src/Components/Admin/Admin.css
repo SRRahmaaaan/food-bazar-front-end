@@ -1,0 +1,42 @@
+.admin-container {
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+.sidebar {
+  background-color: #2d3436;
+  min-height: 100vh;
+  position: relative;
+}
+.sidebar h1 {
+  font-size: 2.5rem;
+  font-family: "Fugaz One", cursive;
+  color: #a4fbda;
+  margin: 20px 0px 50px 10px;
+}
+.sidebar a:-webkit-any-link {
+  display: block;
+  background-color: rgba(255, 255, 255, 0.4);
+  margin: 15px 0px;
+  padding: 10px 0px;
+  font-size: 1.4rem;
+  color: white;
+  text-align: center;
+}
+.sidebar a:-webkit-any-link:hover {
+  text-decoration: none;
+  background-color: black;
+}
+#icon-1 {
+  position: absolute;
+  top: 132px;
+  left: 10px;
+  font-size: 1.4rem;
+  color: white;
+}
+#icon-2 {
+  position: absolute;
+  top: 200px;
+  left: 40px;
+  font-size: 1.4rem;
+  color: white;
+}

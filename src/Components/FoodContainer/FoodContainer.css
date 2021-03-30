@@ -1,0 +1,11 @@
+.food-container {
+  width: 80%;
+  min-height: 100vh;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 30px;
+}

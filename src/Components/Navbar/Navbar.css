@@ -1,0 +1,21 @@
+nav {
+  height: 80px;
+  background-color: rgba(90, 250, 164, 0.3);
+  box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+nav .logo img {
+  width: 60px;
+}
+nav .navLinks a:-webkit-any-link {
+  color: white;
+  margin: 5px;
+  display: inline-block;
+  padding: 10px 25px;
+  background-color: rgba(255, 255, 255, 0.04);
+  box-shadow: 20px 30px 50px rgba(0, 0, 0, 0.6);
+  font-size: 1.2rem;
+}
+/* header #4a87ed */
