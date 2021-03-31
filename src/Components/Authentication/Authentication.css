@@ -1,0 +1,24 @@
+.login-card h2 {
+  font-family: "Fugaz One", cursive;
+  font-size: 2.5rem;
+  color: #a4fbda;
+}
+.login-card .button {
+  padding: 15px 0px;
+  width: 100%;
+  border: 2px solid white;
+  border-radius: 15px;
+  font-size: 1.3rem;
+  color: white;
+  background: linear-gradient(45deg, #3cba54, #f4c20d, #db3236, #4885ed);
+  cursor: pointer;
+  transition: all 1s;
+}
+.login-card .button:hover {
+  background: skyblue;
+}
+.login-card .google-icon {
+  margin-right: 10px;
+  font-size: 1.4rem;
+  color: #4885ed;
+}

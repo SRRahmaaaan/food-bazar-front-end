@@ -18,7 +18,7 @@ const AddProduct = () => {
                             <Form.Control  type="text" required onChange={handleChange} value={values.name} name="name" />
                         </Form.Group>
                         <Form.Group>
-                            <Form.Label>For</Form.Label>
+                            <Form.Label>Quantity</Form.Label>
                             <Form.Control  type="text" required onChange={handleChange} value={values.forPeople} name="forPeople" placeholder="how many people can eat this food" />
                         </Form.Group>
                         <Form.Group>
