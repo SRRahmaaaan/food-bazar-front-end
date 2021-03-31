@@ -4,7 +4,7 @@
 }
 .sidebar {
   background-color: #2d3436;
-  min-height: 100vh;
+  height: 696px;
   position: relative;
 }
 .sidebar h1 {
@@ -29,7 +29,7 @@
 #icon-1 {
   position: absolute;
   top: 132px;
-  left: 10px;
+  left: 5px;
   font-size: 1.4rem;
   color: white;
 }
@@ -39,4 +39,27 @@
   left: 40px;
   font-size: 1.4rem;
   color: white;
+}
+.products {
+  background-color: ;
+  box-shadow: 20px 30px 50px rgba(255, 255, 255, 0.09);
+  background-color: black;
+  color: white;
+  width: 60%;
+  margin: 50px auto;
+}
+.product {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  background-color: darkslategray;
+  justify-content: space-between;
+  height: 50px;
+  padding: 0px 10%;
+}
+.product .delete-icon {
+  cursor: pointer;
+}
+.product .delete-icon:hover {
+  color: red;
 }

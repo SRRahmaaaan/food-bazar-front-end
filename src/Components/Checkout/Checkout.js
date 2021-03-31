@@ -21,7 +21,7 @@ const Checkout = () => {
     const {currentUser} = useAuth()
     const handleCheckout = () => {
         const newOrderedFood = {
-            date: new Date(),
+            date: new Date().toDateString("dd/MM/YYYY"),
             user: currentUser.email,
             food: oneFood,
         }
