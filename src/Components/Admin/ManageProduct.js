@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import ManagingOneProduct from './ManagingOneProduct'
-import Navbar from "../Navbar/Navbar"
+import Loading from "../Loading/Loading"
 import "./Admin.css"
 
 const ManageProduct = () => {
@@ -12,6 +12,9 @@ const ManageProduct = () => {
     }, [])
     return (
         <div className="products">
+            {
+                manageProducts.length === 0 && <Loading />
+            }
             {
                 manageProducts.map((manageProduct) => <ManagingOneProduct key={manageProduct._id} manageProduct={manageProduct}></ManagingOneProduct>)
             }
