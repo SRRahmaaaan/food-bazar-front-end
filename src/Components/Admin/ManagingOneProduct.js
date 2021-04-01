@@ -5,7 +5,7 @@ const ManagingOneProduct = ({ manageProduct }) => {
     const { desc, _id } = manageProduct
     const [none, setNone] = useState(false)
     const handleDelete = (id) => {
-        fetch(`http://localhost:5000/deleteSpecific/${id}`, {
+        fetch(`https://serene-castle-82467.herokuapp.com/deleteSpecific/${id}`, {
             method:"DELETE"
         })
         .then(response => response.json())

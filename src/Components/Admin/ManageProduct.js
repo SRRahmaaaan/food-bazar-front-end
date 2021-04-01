@@ -6,7 +6,7 @@ import "./Admin.css"
 const ManageProduct = () => {
     const [manageProducts, setManageProducts] = useState([])
     useEffect(() => {
-        fetch("http://localhost:5000/allFoods")
+        fetch("https://serene-castle-82467.herokuapp.com/allFoods")
         .then(response => response.json())
         .then(data => setManageProducts(data))
     }, [])

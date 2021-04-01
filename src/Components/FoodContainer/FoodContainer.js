@@ -6,8 +6,8 @@ import Loading from "../Loading/Loading"
 const FoodContainer = () => {
     const [allFoods, setAllFoods] = useState([])
     useEffect(() => {
-        fetch("http://localhost:5000/allFoods")
-        .then(response => response.json())
+        fetch("https://serene-castle-82467.herokuapp.com/allFoods")
+            .then(response => response.json())
             .then(data => setAllFoods(data))
     },[])
     return (

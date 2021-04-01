@@ -10,7 +10,7 @@ const Orders = () => {
     const [orders, setOrders] = useState([])
     const {currentUser} = useAuth()
     useEffect(() => {
-        fetch("http://localhost:5000/getSpecific?email=" + currentUser.email, {
+        fetch("https://serene-castle-82467.herokuapp.com/getSpecific?email=" + currentUser.email, {
             method: "GET",
             headers: {'Content-Type': 'application/json'}
         })

@@ -29,7 +29,7 @@ const Functions = () => {
             desc: values,
             imageURL: imageURL
         }
-        fetch("http://localhost:5000/newFood", {
+        fetch("https://serene-castle-82467.herokuapp.com/newFood", {
             method: "POST",
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(newUploadFood)

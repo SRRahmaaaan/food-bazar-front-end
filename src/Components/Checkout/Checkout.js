@@ -13,7 +13,7 @@ const Checkout = () => {
     const history = useHistory()
     
     useEffect(() => {
-        fetch(`http://localhost:5000/singleFood/${id}`)
+        fetch(`https://serene-castle-82467.herokuapp.com/singleFood/${id}`)
         .then(response => response.json())
         .then(data => setOneFood(data))
     },[id])
@@ -25,7 +25,7 @@ const Checkout = () => {
             user: currentUser.email,
             food: oneFood,
         }
-        fetch("http://localhost:5000/orderedFood", {
+        fetch("https://serene-castle-82467.herokuapp.com/orderedFood", {
             method: "POST",
             headers: { 'Content-Type': "application/json" },
             body:JSON.stringify(newOrderedFood)
