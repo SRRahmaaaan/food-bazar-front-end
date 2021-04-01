@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import {FaUserFriends} from "react-icons/fa"
+import {FaUserFriends, FaHome} from "react-icons/fa"
 import "./Checkout.css"
-import Navbar from "../Navbar/Navbar"
 import { useHistory, useParams } from 'react-router'
 import { Table, Button } from 'react-bootstrap'
 import { useAuth } from '../Authentication/AuthContext'
@@ -11,13 +10,11 @@ const Checkout = () => {
     const [oneFood, setOneFood] = useState({})
     const { id } = useParams()
     const history = useHistory()
-    
     useEffect(() => {
         fetch(`https://serene-castle-82467.herokuapp.com/singleFood/${id}`)
         .then(response => response.json())
         .then(data => setOneFood(data))
     },[id])
-
     const {currentUser} = useAuth()
     const handleCheckout = () => {
         const newOrderedFood = {
@@ -37,12 +34,14 @@ const Checkout = () => {
             }
         })
     }
-
     const { desc } = oneFood
+    const handleHome = () => {
+        history.push("/")
+    }
     return (
         <>
-            <Navbar />
             <div className="checkout">
+                <FaHome onClick={handleHome} style={{fontSize:"1.5rem", color:"white", cursor:"pointer"}} />
                 <h2>Checkout</h2>
                 <div>
                     <Table striped hover variant="info"  className="table">
