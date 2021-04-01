@@ -20,7 +20,7 @@ const Orders = () => {
     return (
         <>
             <Navbar />
-                <h1 className="text-center mt-4">Your Have { orders.length} Orders </h1>
+                <h1 className="text-center" style={{paddingTop:"90px"}}>Your Have <span className="text-success">{ orders.length}</span> Orders </h1>
             <div className="order-container">
                 {
                     orders.length === 0 && <Loading />
